@@ -20,5 +20,14 @@ namespace F26Week5WpfControls
         {
             InitializeComponent();
         }
+
+        private void btnShowGrid_Click(object sender, RoutedEventArgs e)
+        {
+            GridExample gridWin = new GridExample();
+            //gridWin.ShowDialog();
+
+            gridWin.Owner = this;
+            gridWin.Show();
+        }
     }
 }
