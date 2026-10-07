@@ -1,0 +1,31 @@
+﻿<Window x:Class="F26Week5WpfControls.TabControlExample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:F26Week5WpfControls"
+        mc:Ignorable="d"
+        Title="TabControlExample" Height="450" Width="800">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Personal Info">
+                <Canvas>
+                    <Label Content="Label" Canvas.Left="79" Canvas.Top="67"/>
+                    <TextBox Canvas.Left="143" TextWrapping="Wrap" Text="TextBox" Canvas.Top="80" Width="120"/>
+                    <Label Content="Label" Canvas.Left="98" Canvas.Top="148"/>
+                    <TextBox Canvas.Left="181" TextWrapping="Wrap" Text="TextBox" Canvas.Top="148" Width="120"/>
+                    <Button Content="Button" Canvas.Left="181" Canvas.Top="217"/>
+                </Canvas>
+            </TabItem>
+
+            <TabItem Header="Hobbies">
+                <StackPanel>
+                    <CheckBox Content="Hobby 1"/>
+                    <CheckBox Content="Hobby 2"/>
+                    <CheckBox Content="Hobby 3"/>
+                    <CheckBox Content="Hobby 4"/>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
