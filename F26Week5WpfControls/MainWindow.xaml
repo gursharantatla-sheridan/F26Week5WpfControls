@@ -35,5 +35,26 @@
         </GroupBox>
         <Button x:Name="btnGetGender" Content="Get Gender" Canvas.Left="226" Canvas.Top="310" Height="34" Width="114" HorizontalAlignment="Center" VerticalAlignment="Top" Click="btnGetGender_Click"/>
 
+        <ComboBox x:Name="cmbCities" Canvas.Left="439" Canvas.Top="144" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top" SelectionChanged="cmbCities_SelectionChanged" SelectedIndex="0">
+            <ComboBoxItem Content="Select a city"/>
+            <ComboBoxItem Content="Toronto"/>
+            <ComboBoxItem Content="London"/>
+            <ComboBoxItem Content="Paris"/>
+            <ComboBoxItem Content="Tokyo"/>
+            <ComboBoxItem Content="Sydney"/>
+            <ComboBoxItem Content="Cape Town"/>
+            <ListBox d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        </ComboBox>
+        <Label Content="Cities" Canvas.Left="383" Canvas.Top="142"/>
+        <Button x:Name="btnGetCity" Content="Get City" Canvas.Left="564" Canvas.Top="140" Height="34" Width="114" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnGetCity_Click"/>
+        
+        <ListBox x:Name="lstCountries" Height="172" Width="152" Canvas.Left="383" Canvas.Top="206" HorizontalAlignment="Left" VerticalAlignment="Center" SelectionMode="Extended">
+            <ListBoxItem Content="Canada"/>
+            <ListBoxItem Content="England"/>
+            <ListBoxItem Content="Australia"/>
+            <ListBoxItem Content="South Africa"/>
+            <ListBoxItem Content="Japan"/>
+        </ListBox>
+
     </Canvas>
 </Window>
