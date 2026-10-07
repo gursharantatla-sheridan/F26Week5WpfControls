@@ -26,8 +26,9 @@ namespace F26Week5WpfControls
             GridExample gridWin = new GridExample();
             //gridWin.ShowDialog();
 
-            gridWin.Owner = this;
+            //gridWin.Owner = this;
             gridWin.Show();
+            this.Close();
         }
     }
 }
