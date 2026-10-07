@@ -15,7 +15,7 @@
         </Canvas>
         <Image Height="93" Canvas.Left="226" Canvas.Top="27" Width="142" Source="/Car.png" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
-        <GroupBox Height="157" Header="Hobbies" Width="177" Canvas.Left="32" Canvas.Top="150">
+        <GroupBox Height="157" Header="Hobbies" Width="177" Canvas.Left="32" Canvas.Top="127" HorizontalAlignment="Center" VerticalAlignment="Top">
             <StackPanel x:Name="spHobbies">
                 <CheckBox Content="Gardening" Margin="5"/>
                 <CheckBox Content="Singing" Margin="5"/>
@@ -23,8 +23,17 @@
                 <CheckBox Content="Hiking" Margin="5"/>
             </StackPanel>
         </GroupBox>
-        <Button x:Name="btnGetHobbies" Content="Get Hobbies" Canvas.Left="226" Canvas.Top="166" Height="34" Width="114"/>
+        <Button x:Name="btnGetHobbies" Content="Get Hobbies" Canvas.Left="226" Canvas.Top="147" Height="34" Width="114" Click="btnGetHobbies_Click" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Label x:Name="lblOutput" Content="" Canvas.Left="572" Canvas.Top="261" Height="133" Width="184" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FFD4FBCF"/>
+
+        <GroupBox Height="116" Header="Gender" Width="177" Canvas.Left="32" Canvas.Top="294" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <StackPanel x:Name="spGender">
+                <RadioButton Content="Female" Margin="5"/>
+                <RadioButton Content="Male" Margin="5"/>
+                <RadioButton Content="Other" Margin="5"/>
+            </StackPanel>
+        </GroupBox>
+        <Button x:Name="btnGetGender" Content="Get Gender" Canvas.Left="226" Canvas.Top="310" Height="34" Width="114" HorizontalAlignment="Center" VerticalAlignment="Top" Click="btnGetGender_Click"/>
 
     </Canvas>
 </Window>

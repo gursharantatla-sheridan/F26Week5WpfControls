@@ -30,5 +30,26 @@ namespace F26Week5WpfControls
             gridWin.Show();
             this.Close();
         }
+
+        private void btnGetHobbies_Click(object sender, RoutedEventArgs e)
+        {
+            string hobbies = "";
+
+            foreach (CheckBox chk in spHobbies.Children.OfType<CheckBox>())
+            {
+                if (chk.IsChecked == true)
+                    hobbies += chk.Content + "\n";
+            }
+
+            lblOutput.Content = hobbies;
+        }
+
+        private void btnGetGender_Click(object sender, RoutedEventArgs e)
+        {
+            var selectedGender = spGender.Children.OfType<RadioButton>()
+                                                  .FirstOrDefault(rdo => rdo.IsChecked == true);
+
+            lblOutput.Content = selectedGender?.Content ?? "Please select your gender";
+        }
     }
 }
